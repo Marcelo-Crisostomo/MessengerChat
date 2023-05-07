@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/jpg" href="assets/img/favicon-16x16.png"/>
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    <!-- Google Fonts Poppins y lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap 5.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles-messenger.css">
+        <!-- Styles sheets created by Sass -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Chato App </title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg menu-nav shadow-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand nav__btn" href="#"><img class="nav__logo" src="assets/img/chato-logo.png" alt=""></a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link px-2 navigation__boton" aria-current="page" href="#">Home</a>
+              <a class="nav-link px-2 navigation__boton" href="#">FAQ</a>
+              <a class="nav-link px-2 navigation__boton" href="#">Manuales</a>
+              <a class="nav-link px-2 navigation__boton">Noticias</a>
+              <a class="nav-link px-2 navigation__boton">Calendario</a>
+              <a class="nav-link px-2 navigation__boton">Perfil</a>
+              <a class="nav-link px-2 navigation__boton">Organigrama</a>
+              <a class="nav-link px-2 navigation__boton">Noticias</a>
+              <a class="nav-link px-2 navigation__boton active">Chat Online</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin del nav -->
+      <!-- Chat -->
+      <div class="container-lg py-5">
+        <div class="row fila chat">
+
+            <!-- Columna izquierda---------------- -->
+            <div class=" col-md-12 col-lg-3 chat__left py-2">
+              
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-comments principal"></i>
+                    </a>
+                   
+                  </p>
+                  <div class="container-fluid collapse show" id="collapseExample">
+                    <!-- BUSCADOR -->
+              <div class="input-group mb-3">
+                <span class="input-group-text lupa" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control buscador input-txt" placeholder="Buscar chat" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+                   
+              <div class="row item__lista__chat">
+                <div class="col-2">
+                  <img class="img-lista" src="assets/img/Boby.png" alt="">
+                </div>
+                <div class="col-10 text-white">
+                  <div class="div__nombre__lista">
+                    <h3 class="nombre__lista">John Doe</h3>
+                  </div>
+                  <div class="container-fluid div__mensaje__lista">
+                    <div class="row">
+                      <div class="col-7">
+                        <p class="mensaje__lista">buen día</p>
+                      </div>
+                      <div class="col-5">
+                        <p class="hora__lista"> 12m</p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="row item__lista__chat">
+                <div class="col-2">
+                  <img class="img-lista" src="assets/img/Kiara.png" alt="">
+                </div>
+                <div class="col-10 text-white">
+                  <div class="div__nombre__lista">
+                    <h3 class="nombre__lista">Jane Doe</h3>
+                  </div>
+                  <div class="container-fluid div__mensaje__lista">
+                    <div class="row">
+                      <div class="col-7">
+                        <p class="mensaje__lista">Usted sabe</p>
+                      </div>
+                      <div class="col-5">
+                        <p class="hora__lista"> 12m</p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+               
+              </div>
+              
+
+
+                    <div class="row item__lista__chat chat2">
+                      <div class="col-2">
+                        <img class="img-lista" src="assets/img/foto-user-2.png" alt="">
+                      </div>
+                      <div class="col-10 text-white">
+                        <div class="div__nombre__lista">
+                          <h3 class="nombre__lista">Cecilia Hija</h3>
+                        </div>
+                        <div class="container-fluid div__mensaje__lista">
+                          <div class="row">
+                            <div class="col-7">
+                              <p class="mensaje__lista">JAJAJA</p>
+                            </div>
+                            <div class="col-5">
+                              <p class="hora__lista"> 12m</p>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="row item__lista__chat">
+                      <div class="col-2">
+                        <img class="img-lista" src="assets/img/Omaar.png" alt="">
+                      </div>
+                      <div class="col-10 text-white">
+                        <div class="div__nombre__lista">
+                          <h3 class="nombre__lista">Fulanito</h3>
+                        </div>
+                        <div class="container-fluid div__mensaje__lista">
+                          <div class="row">
+                            <div class="col-7">
+                              <p class="mensaje__lista">Está pagado</p>
+                            </div>
+                            <div class="col-5">
+                              <p class="hora__lista"> 12m</p>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="row item__lista__chat">
+                      <div class="col-2">
+                        <img class="img-lista" src="assets/img/Zhaou.png" alt="">
+                      </div>
+                      <div class="col-10 text-white">
+                        <div class="div__nombre__lista">
+                          <h3 class="nombre__lista">Maestro Zen</h3>
+                        </div>
+                        <div class="container-fluid div__mensaje__lista">
+                          <div class="row">
+                            <div class="col-7">
+                              <p class="mensaje__lista">trabaja</p>
+                            </div>
+                            <div class="col-5">
+                              <p class="hora__lista"> 12m</p>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="row item__lista__chat">
+                      <div class="col-2">
+                        <img class="img-lista" src="assets/img/Zorah.png" alt="">
+                      </div>
+                      <div class="col-10 text-white">
+                        <div class="div__nombre__lista">
+                          <h3 class="nombre__lista">Pepita</h3>
+                        </div>
+                        <div class="container-fluid div__mensaje__lista">
+                          <div class="row">
+                            <div class="col-7">
+                              <p class="mensaje__lista">Hola papito</p>
+                            </div>
+                            <div class="col-5">
+                              <p class="hora__lista"> 12m</p>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                     
+                    </div>
+
+                    <div class="row item__lista__chat" onclick="nuevoMensaje();">
+                      <div class="col-2">
+                        <img class="img-lista" src="assets/img/Hecter.png" alt="">
+                      </div>
+                      <div class="col-10 text-white">
+                        <div class="div__nombre__lista">
+                          <h3 class="nombre__lista">Juan Perez</h3>
+                        </div>
+                        <div class="container-fluid div__mensaje__lista">
+                          <div class="row">
+                            <div class="col-7">
+                              <p class="mensaje__lista position-relative fw-bolder"  id="no-leido">Cómo estás
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-principal">3</span>
+                                
+                                <span class="visually-hidden">unread messages</span></p>
+                              
+                            </div>
+                            <div class="col-5">
+                              <p class="hora__lista"> 12m</p>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+              </div>
+
+
+              <!-- Columna derecha------------------------- -->
+              <div class="col-md-12 col-lg-9 chat__right py-4 shadow-lg">
+                <div class="titulo">
+                  <span></span>
+                    <h1 class="chat__titulo fs-3"><img width="50" src="assets/img/familia.png" class="rounded-5 img-chat shadow-lg" alt=""> &nbsp;&nbsp;Grupo Familia 👪 💖</h1>
+                </div>
+                <div class="chat__app mx-2">
+                    <h6 class="chat__app__title">Bienvenido al chat de grupos</h6>
+                    <p class="chat__app__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui suscipit pariatur ipsa earum tempore maiores iste facilis, omnis repellat. </p>
+                </div>
+                <div class="chat__fecha">
+                    <p class="chat__fecha__txt text-center">Viernes 5 de Mayo</p>
+                </div>
+
+                <!--CONTAINER Receptor -->
+                <div class="container-fluid chat__receptor">
+                    <div class="row">
+                      <!-- COL IMG -->
+                      
+                        <div class="col-12 col-sm-1 chat__receptor__img">
+                            <img width="40" src="assets/img/foto-user-2.png" alt="">
+                        </div>
+                        <!-- COL CHAT -->
+                        
+                        <div class="col-12 col-sm-11 chat__receptor__txt">
+                          <span class="badge rounded-pill pildora-r">Cecilia</span>
+                            <div class="chat__receptor__txt__box">
+                              
+                                <p class="parrafo__receptor">Hola buenos días querida familia &nbsp;<span class="chat__emisor__emoji">🥰 <time class="hora-receptor"><i class="fa-regular fa-clock i"></i>10:05 PM</time></span></p>
+                            </div>
+                            <div class="chat__receptor__txt__box">
+                                <p class="parrafo__receptor">¿Cómo están todos? <time class="hora-receptor"><i class="fa-regular fa-clock i"></i>10:05 PM</time></p>
+                            </div>
+                            <div class="chat__receptor__txt__box">
+                                <p class="parrafo__receptor">¿Papito cómo te fue en el médico?<span class="chat__emisor__emoji">&nbsp;👨‍⚕️</span> <time class="hora-receptor"><i class="fa-regular fa-clock i"></i>10:05 PM</time></p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__fecha">
+                  <p class="chat__fecha__txt text-center">Sábado 6 de Mayo</p>
+              </div>
+              <!-- CONTAINER EMISOR-------- -->
+                <div class="container chat__emisor">
+                    <div class="row">
+                       
+                        <div class="col-12 col-sm-11 chat__emisor__txt">
+                          <span class="badge rounded-pill pildora">Papá</span>
+                            <div class="chat__emisor__txt__box">
+                              
+                                <p class="parrafo__emisor">Hola hija muy bien &nbsp; <span class="chat__emisor__emoji">🥰</span><time class="hora"><i class="fa-regular fa-clock i"></i>10:02 PM</time></p>
+                            </div>
+                            <div class="chat__emisor__txt__box">
+                                <p class="parrafo__emisor">Estoy como lechuga&nbsp; 🥬<time class="hora"><i class="fa-regular fa-clock i"></i>10:04 PM</time></p>
+                            </div>
+                            <div class="chat__emisor__txt__box">
+                              <p class="parrafo__emisor">Así que estoy celbrando<time class="hora"><i class="fa-regular fa-clock i"></i>10:05 PM</time><span class="check__txt">
+                                <i class="fa-solid fa-check"></i>
+                              </span>
+                            </p>
+                          </div>
+                            <div class="chat__emisor__txt__box">
+                                <p class="parrafo__emisor"><span class="chat__emisor__emoji">🎉 🎉 🎉 🕺 🕺 🕺 <time class="hora"><i class="fa-regular fa-clock i"></i>10:00 PM</time></span>
+                                  <span class="check__txt">
+                                    <i class="fa-solid fa-check-double"></i>
+                                  </span></p>
+                            </div>
+
+                            <div class="chat__emisor__txt__box">
+                              <p class="parrafo__emisor">😶‍🌫️ <time class="hora"><i class="fa-regular fa-clock i"></i>10:06 PM</time><span class="check__txt leido">
+                                <i class="fa-solid fa-check-double"></i>
+                                </span></p>
+                          </div>
+
+                            
+                        </div>
+                        <div class="col-12 col-sm-1 chat__emisor__img">
+                            <img width="40" class="" src="assets/img/foto-user-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container chat__receptor">
+                  <div class="row">
+                      <div class="col-sm-2 col-md-1 chat__receptor__img">
+                          <img width="40" src="assets/img/foto-user-2.png" alt="">
+                      </div>
+                      <div class="col-sm-10 col-md-2 chat__receptor__txt">
+                        <span class="badge rounded-pill pildora-r">Cecilia</span>
+                          <div class="chat__receptor__txt__box">
+                              <p class="parrafo__receptor">JAJAJA</p>
+                          </div>
+                         
+                      </div>
+                  </div>
+              </div>
+
+                <!-- footer -->
+                <div class="container-fluid text-center pt-5">
+                    <div class="row pt-5">
+
+                      <!-- adjuntar -->
+                      <div class="col-1 col-sm-2 pt-1 text-midle">
+                      <div class="btn-group dropup">
+                        <button type="button" class="principal" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-paperclip a"></i>
+                        </button>
+                        <ul class="dropdown-menu drop-menu shadow-lg">
+                        <li class="pb-1"><a class="dropdown-item item-adjutar" href="#"><i class="fa-regular fa-image icono-file"></i> &nbsp;Imágen</a></li>
+                        <li class="pb-1"><a class="dropdown-item item-adjutar" href="#"><i class="fa-solid fa-video icono-file"></i> &nbsp;Video</a></li>
+                        <li>
+                          <a class="dropdown-item item-adjutar" href="#">
+                          <i class="fa-regular fa-file icono-file"></i>
+                           &nbsp;Archivo</a>
+                        </li>
+                        </ul>
+                      </div>
+
+                      </div>
+                      <div class="col-9 col-sm-8">
+                        <input type="text" class="form-control input-txt" id="exampleFormControlInput1" placeholder="Escribe aquí tu mensaje...">
+
+                        
+
+                      </div>
+                      <div class="col-2 col-sm-2 pt-1 text-midle">
+                        <button type="button" class="principal">
+                          <i class="fa-regular fa-paper-plane b"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                <!-- fin col 9 -->
+        </div>
+      </div>
+      <!-- Fin del chat -->
+    <!-- Bootstrap Bundle 5.3 -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+     <!-- Custom actions -->
+     <script src="assets/js/actions.js"></script>
+</body>
+</html>

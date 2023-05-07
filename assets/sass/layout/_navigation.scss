@@ -1,0 +1,22 @@
+.menu-nav{
+    background-color: $background-field;
+    padding-left: 20px;
+    .nav__logo{
+        width: 180px;
+        padding: 15px 30px;
+    }
+    .navigation__boton{
+        color: $texto-me;
+        font-family: $fuente1;
+    }
+   
+}
+// Deshabilitamos el borde feo del botón hamburguesa que trae bootstrap 5
+.navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .nav-link:hover{
+    color: $variante-principal2;
+    cursor: pointer;
+  }

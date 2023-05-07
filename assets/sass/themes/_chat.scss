@@ -1,0 +1,342 @@
+
+.fila{
+    background-color: $background;
+    border-radius: 20px 10px 10px 20px;
+}
+
+// Scroll bar 
+.fila::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  .fila::-webkit-scrollbar-track {
+    background: $background;  
+    border-radius: 10px;      /* color of the tracking area */
+  }
+  
+  .fila::-webkit-scrollbar-thumb {
+    background: $burbuja-me;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, $burbuja-me, $principal);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, $burbuja-me, $principal);
+    // background-color: $principal; 
+       /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 2px solid $background;  /* creates padding around scroll thumb */
+  }
+.chat__left{
+
+    background: $background-app;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom $background-app, $background-app2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $background-app, $background-app2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px 0 0 20px;
+}
+.chat__right{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.titulo{
+    padding: 10px 30px 30px;
+    .chat__titulo{
+        color: $blanco;
+        font-family: $fuente1;
+    }
+}
+
+.chat__app{
+    font-family: $fuente2;
+    background: $background-app;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $background-app, $background-app2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $background-app, $background-app2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 15px 30px;
+    .chat__app__title{
+        color: $titulo-app;
+        font-weight: 400;
+    }
+    .chat__app__parrafo{
+        color: $texto-app;
+        font-weight: 300;
+    }
+  
+
+}
+.chat__fecha__txt{
+    color: $fecha-chat;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+// Receptor
+.chat__receptor{
+    font-family: $fuente2;
+    padding: 0px 30px;
+    .chat__receptor__txt{
+        padding-top: 10px;
+    }
+}
+.parrafo__receptor{
+    background: $burbuja-el;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, $burbuja-el, $variante-principal);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $burbuja-el, $variante-principal); 
+    color: $texto-el;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline;
+    font-size: 15px;
+}
+.chat__receptor__txt__box{
+    padding-bottom: 20px;
+}
+// @mixin burbuja (){
+    
+// }
+// Emisor
+.chat__emisor{
+    font-family: $fuente2;
+    padding: 0px 30px;
+    text-align: right;
+    padding-top: 10px;
+}
+.parrafo__emisor{
+        background: $burbuja-me;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, $burbuja-me, $principal);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $burbuja-me, $principal); 
+    color: $texto-me;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline;
+    font-size: 15px;
+}
+.chat__emisor__txt__box{
+    padding-bottom: 20px;
+}
+.chat__emisor__txt{
+    padding-top: 8px;
+}
+// tamaño del emoji
+
+.chat{
+    min-height: 800px;
+}
+.chato{
+    height: auto;
+}
+.principal{
+    color: $principal;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.hover-principal{
+    font-size: 30px;
+    color: $texto-el;
+}
+:hover.hover-principal{
+    color: $principal;
+    transition: .5s;
+    cursor: pointer;
+
+}
+.input-txt{
+    background-color: transparent;
+    border-color: $linea;
+    border-width: 2px;
+    color: $texto-el;
+}
+.input-txt:focus{
+    background-color: $variante-principal;
+    border-color: $principal;
+    border-width: 2px;
+    color: $texto-el;
+    -webkit-box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.6);
+    -moz-box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.6);
+    box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.6);
+}
+.input-txt::placeholder{
+    color: $texto-el;
+}
+
+
+// check chat ticket
+.check__emoji{
+    color: $background;
+    font-size: 21px;
+}
+.check__txt{
+    color: $background;
+    padding-left: 10px;
+}
+.leido{
+    color: $titulo-app;
+}
+
+// botón dropdown adjuntar file
+.item-adjutar{
+    background-color: $conversacion-on;
+    color: $subtitulo;
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: $fuente2; 
+}
+.item-adjutar:hover{
+    background-color: $background-field;
+    color: $blanco;
+}
+.drop-menu{
+    background-color: $conversacion-on;
+}
+.icono-file{
+    padding-right: 5px;
+}
+ @mixin hora ($color-hora: $background3){
+    font-size: 11px;
+    padding-left: 8px;
+    color: $color-hora;
+    font-weight: 600;
+    font-family: $fuente2;
+ }
+ @mixin pildora($col:$burbuja-me){
+
+   
+        margin-bottom: 15px;
+        font-family: $fuente1;
+        font-size: 14px;
+        background: $col;  /* fallback for old browsers */
+        padding: 10px 15px;
+    
+ }
+// hORA
+.hora{
+    @include hora;
+}
+.hora-receptor{
+    @include hora($color-hora: $subtitulo2)
+}
+// imagen principal chat
+
+.i{
+    padding-right: 3px;
+}
+.pildora{
+    @include pildora;
+} 
+.pildora-r{
+    @include pildora ($col: $background-app);
+}
+
+// Iquierda col
+.div__nombre__lista{
+    padding-left: 10px;
+}
+.nombre__lista{
+    font-size: 16px;
+    font-family: $fuente1;
+    font-weight: 400;
+    color: $subtitulo;
+}
+.mensaje__lista,.hora__lista{
+    display: inline-block;
+    font-size: 13px;
+    font-family: $fuente2;
+    color: $subtitulo2;
+}
+.hora__lista{
+    padding-left: 30px;
+}
+// cada chat item de la lista
+.item__lista__chat{
+    padding: 25px 0 15px;
+    border-bottom: 2px solid $background;
+}
+
+.item__lista__chat:hover{
+    transition: .6s;
+    background-color: $background3;
+    cursor: pointer;
+    transform: scale(1.03);
+    border-radius: 10px;
+    border-color: $principal;
+    border-width: 2px;
+
+
+    // -webkit-box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.4);
+    // -moz-box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.4);
+    // box-shadow: 0px 0px 29px -1px rgba(101,69,222,0.4);
+}
+.chat2{
+    background-color: $background3;
+    border-radius: 10px;
+}
+.img-lista{
+    padding-top: 8px;
+    width: 35px;
+}
+// BUSCADOR
+.buscador{
+    background-color: $background-field;
+}
+.lupa{
+    background-color: transparent;
+    color: $principal;
+    border: none;
+    font-size: 20px;
+}
+.lupa:hover{
+    cursor: pointer;
+}
+
+// fondo pelota mensajes no leidos
+.bg-principal{
+    background-color: $principal;
+}
+
+
+
+
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+ // Medium devices (tablets, 768px and up)
+@media (max-width: 992px) {
+    .img-lista{
+        width: 40px;
+    }
+    .item__lista__chat:last-child{
+        padding: 25px 0 15px;
+        border-bottom: 2px solid $background-app2;
+    }
+    .item__lista__chat:hover{
+        padding: 25px 0 15px;
+        border-bottom: 2px solid $principal;
+    }
+    .chat__left{
+        border-radius: 20px 20px 0 0;
+    }
+
+ }
+@media (max-width: 576px) { 
+    .parrafo__receptor,.parrafo__emisor{
+        font-size: 12px;
+    }
+    .chat__receptor__img,.chat__emisor__img{
+        
+        padding-bottom: 5px;
+    }
+    .chat__emisor__txt{
+        order: 2 !important;
+    }
+    .fila::-webkit-scrollbar {
+        width: 5px;               /* width of the entire scrollbar */
+      }
+      .fila{
+        border-radius: 20px;
+      }
+ }
+
